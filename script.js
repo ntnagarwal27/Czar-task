@@ -17,7 +17,7 @@ var list = '';
 	});
 	$('#directory').html('<ul>'+list+'</ul>');
 
-	function getChanges(abc,added,modified)
+	function getChanges(abc,added,modified)   // function to display the directory structure and changes
 	{
 		var listdata = Array.from(Object.keys(abc), k=>abc[k]);
 		var added_data = Array.from(Object.keys(added), k=>added[k]);
